@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perkenalan Diri - Widya Aulianti</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*  Background */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "DM Sans", sans-serif;
+        background: linear-gradient(-45deg, #ffe4f0, #f0d9ff, #fbd0e5, #ecd6ff);
+        background-size: 300% 300%;
+        animation: backgroundAnim 10s ease infinite;
+        color: #333;
+      }
+
+      @keyframes backgroundAnim {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /*  Container */
+      .container {
+        max-width: 700px;
+        margin: 60px auto;
+        background-color: #fff8fb;
+        border: 5px dotted #695fc2;
+        border-radius: 30px;
+        padding: 40px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      }
+
+      header {
+        text-align: center;
+      }
+
+      header h1 {
+        font-family: "Pacifico", cursive;
+        color: #695fc2;
+        font-size: 2.8em;
+        margin-bottom: 10px;
+      }
+
+      header h2 {
+        font-size: 1.1em;
+        color: #777;
+        font-weight: 400;
+      }
+
+      /* Foto Profil */
+      img {
+        display: block;
+        margin: 30px auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px dashed #695fc2;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        object-fit: cover;
+      }
+
+      img:hover {
+        transform: scale(1.05) rotate(3deg);
+      }
+
+      /* Biodata */
+      .biodata {
+        font-size: 1.1em;
+        line-height: 1.8;
+        padding: 0 20px;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #d24b94;
+        display: inline-block;
+        width: 180px;
+      }
+
+      a {
+        color: #c94fcf;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Tombol */
+      .btn-sapa {
+        display: block;
+        margin: 40px auto 20px;
+        padding: 12px 28px;
+        background-color: #695fc2;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(255, 179, 218, 0.4);
+        transition: background 0.3s ease;
+      }
+
+      .btn-sapa:hover {
+        background-color: #e68ec6;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #aaa;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 30px 20px;
+        }
+
+        .label {
+          display: block;
+          width: 100%;
+          margin-bottom: 4px;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    </style>
+    <script>
+      function sayHello() {
+        alert(
+          'Widya reporting live from the Milky Way printf("Hello Galaxy!");🌌\n'
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Halo, aku Widya!</h1>
+        <h2>Artificial Intelligence - IPB University</h2>
+      </header>
+
+      <img src="WIDYA AULIANTI BG PUTIH.jpg" alt="Foto Widya" />
+
+      <div class="biodata">
+        <p><span class="label">Nama Lengkap</span>: Widya Aulianti</p>
+        <p><span class="label">NIM</span>: M0405241083</p>
+        <p><span class="label">Program Studi</span>: Artificial Intelligence</p>
+        <p>
+          <span class="label">Fakultas</span>: Sains Data, Matematika, dan
+          Informatika
+        </p>
+        <p><span class="label">Universitas</span>: IPB University</p>
+        <p><span class="label">Proxy</span>: Gauss</p>
+        <p><span class="label">Email</span>: widyaaulianti27@gmail.com</p>
+        <p>
+          <span class="label">Instagram</span>:
+          <a href="https://instagram.com/widyaauu_" target="_blank"
+            >@widyaauu_</a
+          >
+        </p>
+        <p>
+          <span class="label">LinkedIn</span>:
+          <a
+            href="https://www.linkedin.com/in/widya-aulianti-359a5b323"
+            target="_blank"
+            >linkedin.com/in/widya-aulianti-359a5b323</a
+          >
+        </p>
+      </div>
+
+      <button class="btn-sapa" onclick="sayHello()">Click To Galaxy!🛸</button>
+
+      <div class="footer">&copy; 2025 - Widya Aulianti | IPB University</div>
+    </div>
+  </body>
+</html>
